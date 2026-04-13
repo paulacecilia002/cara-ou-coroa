@@ -8,12 +8,29 @@ class Jogar extends StatefulWidget {
 }
 
 class _JogarState extends State<Jogar> {
+
+  void exibirResultado() {
+    print("Botão jogar pressionado");
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xff9C27F5),
-      body: Container(
+      backgroundColor: const Color(0xff61bd86),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Image.asset("imagens/logo.png"),
 
+            const SizedBox(height: 30),
+
+            GestureDetector(
+              onTap: exibirResultado,
+              child: Image.asset("imagens/botao_jogar.png"),
+            ),
+          ],
+        ),
       ),
     );
   }
