@@ -11,8 +11,10 @@ class _JogarState extends State<Jogar> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: ,
-      body: ,
+      backgroundColor: Colors.green,
+      body: Container(
+
+      ),
     );
   }
 }
